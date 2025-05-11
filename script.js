@@ -3,7 +3,7 @@ function init() {
     time = Math.floor(Math.random() * 7 + 1)
     setTimeout(() => {
       resolve("Initializing hecking")
-    }, time * 1000)
+    }, 0)
   })
 }
 function readFile() {
