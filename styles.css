@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    color: rgb(155, 245, 19);
+    font-family: consolas;
+    font-size: 20px;
+}
+
+.dots {
+    padding: 0;
+    margin: 0;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.dots :nth-child(1) {
+    animation: blinking1 1s linear infinite alternate;
+}
+
+.dots :nth-child(2) {
+    animation: blinking2 1s linear infinite alternate;
+}
+
+.dots :nth-child(3) {
+    animation: blinking3 1s linear infinite alternate;
+}
+
+
+@keyframes blinking1 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinking2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinking3 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
